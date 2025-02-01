@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./output.css">
+    <title>Registro Diario</title>
+</head>
+<body>
+
+    <header class="px-4 flex justify-center items-center gap-8 w-full bg-gradient-to-r from-black via-red-900 to-red-800 text-white py-4 mx-auto">
+        <h1 class="text-xl md:text-2xl text-center text-red-300"><a href="index.html" class="inline-block uppercase font-semibold">Comedor <br>Escolar</a></h1>
+
+        <nav class="flex gap-4 sm:gap-8 md:gap-12">
+            <a href="index.html" class="block text-wrap text-lg px-3 py-2 rounded-md transition-colors duration-200 hover:bg-red-700">Inicio</a>
+            <a href="registro.html" class="block text-wrap text-lg active px-3 py-2 rounded-md transition-colors duration-200 hover:bg-red-700">Demo</a>
+        </nav>
+    </header>
+
+    <main class="bg-gray-300 px-4 py-8">
+
+        <div class=" mx-auto rounded-md shadow-sm w-full max-w-2xl bg-gradient-to-br from-gray-100 to-red-50 overflow-hidden">
+            <div class="flex flex-col space-y-1.5 p-6 bg-gradient-to-r from-black via-red-900 to-red-800 text-white">
+                <h3 class="font-semibold tracking-tight text-3xl text-center text-red-300">Registro Diario de comidas</h3>
+                <p class="text-lg text-blue-100 text-center">Ingrese la información de las comidas del día</p>
+            </div>
+            <form action="#" class="space-y-6 py-4" id="formulario">
+                <div class="w-[90%] mx-auto flex items-center flex-wrap justify-center gap-4 bg-white shadow-sm rounded-md py-4">
+                    <input type="date" class="py-2" id="fecha">
+                    <p id="fechaTexto">Hoy, 22 de diciembre de 2024</p>
+                </div>
+
+                <!-- Entrada -->
+                <div class="bg-white flex flex-col gap-4 p-4 w-[90%] mx-auto rounded-md shadow-md">
+                    <div class="text-gray-800 flex justify-between">
+                        <h3 class="font-semibold text-xl">Entrada</h3>
+                        <p class="font-light text-gray-600 italic">Ensalada</p>
+                    </div>
+                    
+                    <div class="flex justify-between">
+                        <input type="radio" name="cantidadEntrada" id="nadaEntrada" class="hidden" value="poco">
+                        <label for="nadaEntrada" class="px-2 sm:px-3 md:px-6 py-2 bg-gray-200 rounded-md block cursor-pointer hover:bg-gray-400 duration-300 ">Poco</label>
+                        <input type="radio" name="cantidadEntrada" id="pocoEntrada" class="hidden" value="regular">
+                        <label for="pocoEntrada" class="px-2 sm:px-3 md:px-6 py-2 bg-gray-200 rounded-md block cursor-pointer hover:bg-gray-400 duration-300 ">Regular</label>
+                        <input type="radio" name="cantidadEntrada" id="todoEntrada" class="hidden" value="mucho">
+                        <label for="todoEntrada" class="px-2 sm:px-3 md:px-6 py-2 bg-gray-200 rounded-md block cursor-pointer hover:bg-gray-400 duration-300 ">Mucho</label>
+                    </div>
+                    
+                </div>
+
+                <!-- Segundo -->
+                <div class="bg-white flex flex-col gap-4 p-4 w-[90%] mx-auto rounded-md shadow-md">
+                    <div class="text-gray-800 flex justify-between">
+                        <h3 class="font-semibold text-xl">Segundo</h3>
+                        <p class="font-light text-gray-600 italic">Pollo al horno con patatas</p>
+                    </div>
+                    
+                    <div class="flex justify-between">
+                        <input type="radio" name="cantidadSegundo" id="nadaSegundo" class="hidden" value="poco">
+                        <label for="nadaSegundo" class="px-2 sm:px-3 md:px-6 py-2 bg-gray-200 rounded-md block cursor-pointer hover:bg-gray-400 duration-300 ">Poco</label>
+                        <input type="radio" name="cantidadSegundo" id="pocoSegundo" class="hidden" value="regular">
+                        <label for="pocoSegundo" class="px-2 sm:px-3 md:px-6 py-2 bg-gray-200 rounded-md block cursor-pointer hover:bg-gray-400 duration-300 ">Regular</label>
+                        <input type="radio" name="cantidadSegundo" id="todoSegundo" class="hidden" value="mucho">
+                        <label for="todoSegundo" class="px-2 sm:px-3 md:px-6 py-2 bg-gray-200 rounded-md block cursor-pointer hover:bg-gray-400 duration-300 ">Mucho</label>
+                    </div>
+                    
+                </div>
+
+                <!-- Postre -->
+                <div class="bg-white flex flex-col gap-4 p-4 w-[90%] mx-auto rounded-md shadow-md">
+                    <div class="text-gray-800 flex justify-between">
+                        <h3 class="font-semibold text-xl">Postre</h3>
+                        <p class="font-light text-gray-600 italic">Flan de Vainilla</p>
+                    </div>
+                    
+                    <div class="flex justify-between">
+                        <input type="radio" name="cantidadPostre" id="nadaPostre" class="hidden" value="poco">
+                        <label for="nadaPostre" class="px-2 sm:px-3 md:px-6 py-2 bg-gray-200 rounded-md block cursor-pointer hover:bg-gray-400 duration-300 ">Poco</label>
+                        <input type="radio" name="cantidadPostre" id="pocoPostre" class="hidden" value="regular">
+                        <label for="pocoPostre" class="px-2 sm:px-3 md:px-6 py-2 bg-gray-200 rounded-md block cursor-pointer hover:bg-gray-400 duration-300 ">Regular</label>
+                        <input type="radio" name="cantidadPostre" id="todoPostre" class="hidden" value="mucho">
+                        <label for="todoPostre" class="px-2 sm:px-3 md:px-6 py-2 bg-gray-200 rounded-md block cursor-pointer hover:bg-gray-400 duration-300 ">Mucho</label>
+                    </div>
+                    
+                </div>
+
+                
+
+                <button type="submit" class="block w-[90%] py-3 font-semibold text-white outline-none bg-gradient-to-r from-red-800 via-red-700 to-red-900 disabled:opacity-90 mx-auto rounded-md hover:from-red-900 hover:via-red-800 hover:to-black transition-all duration-300 cursor-pointer">Guardar Registro</button>
+            </form>
+        </div>
+
+    </main>
+
+    <script src="./app.js" defer></script>
+</body>
+</html>

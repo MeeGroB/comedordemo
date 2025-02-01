@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply font-primary bg-gray-200 min-h-full;
+}
+
+
+input[type="radio"]:checked + label {
+    @apply bg-red-600 text-white;
+}
+
+.active {
+    @apply bg-red-600 space-x-2;
+}
+
+.btnEditar {
+    @apply inline-flex justify-center items-center gap-2 bg-gray-500 hover:bg-gray-600 text-white h-9 px-3 rounded-lg text-sm font-medium focus-visible:outline-none focus-visible:ring-2 transition-all duration-300
+}
+
+.mucho {
+    @apply bg-red-300 text-center text-red-800 rounded; 
+}
+
+.regular {
+    @apply bg-red-200 text-center text-red-800 rounded; 
+}
+
+.poco {
+    @apply bg-red-100 text-center text-red-800 rounded; 
+}
